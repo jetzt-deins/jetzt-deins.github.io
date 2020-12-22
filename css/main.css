@@ -122,7 +122,7 @@ section.header {
 }
 
 .container {
-    margin-inline: auto;
+    margin: 0 auto;
     width: min(90%, 70.5rem);
 }
 
