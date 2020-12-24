@@ -145,6 +145,17 @@ section.header {
 .bg-primary {
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
+    position: relative;
+}
+
+/* SKEW with Border*/
+section.bg-primary::after {
+    content: "";
+    display: block;
+    border-bottom: 5vw solid var(--clr-primary-200);
+    border-left: 100vw solid transparent;
+    position: absolute;
+    bottom: 0;
 }
 
 .bg-dark {
@@ -169,6 +180,7 @@ section.header {
     font-size: 1.5rem;
     padding-right: 1rem;
 }
+
 
 /* === NAVIGATION === */
 
