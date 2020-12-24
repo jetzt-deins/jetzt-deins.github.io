@@ -240,7 +240,11 @@ section.bg-primary::after {
 /* === NAVIGATION END === */
 
 
-@media (min-width: 40em) {
+/* === === === ===  === */
+/*    MEDIA QUERIES     */
+/* === === === ===  === */
+
+@media (min-width: 45em) {
 
     section {
         padding: 7rem 0;
