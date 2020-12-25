@@ -140,15 +140,19 @@ section.header {
 
 .bg-light {
     background-color: var(--clr-primary-200);
+    position: relative;
 }
 
 .bg-primary {
     color: var(--clr-neutral-100);
     background-color: var(--clr-primary-400);
     position: relative;
+    overflow: hidden;
 }
 
+/* ------------------- */
 /* SKEW with Border*/
+
 section.bg-primary::after {
     content: "";
     display: block;
@@ -157,6 +161,32 @@ section.bg-primary::after {
     position: absolute;
     bottom: 0;
 }
+
+
+/* ------------------- */
+/* ARROW with SHAPES*/
+
+section.bg-light.hero::after,
+section.bg-light.hero::before {
+    position: absolute;
+    content: '';
+    width: 150px;
+    height: 50px;
+    background: var(--clr-primary-200);
+    bottom: -1em;
+    z-index: 100;
+}
+
+section.bg-light.hero::before {
+    right: 50%;
+    transform: skew(0, 20deg)
+}
+
+section.bg-light.hero::after {
+    left: 50%;
+    transform: skew(0, -20deg)
+}
+
 
 .bg-dark {
     color: var(--clr-neutral-100);
