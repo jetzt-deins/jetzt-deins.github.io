@@ -15,6 +15,7 @@ img {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 body {
@@ -61,7 +62,6 @@ section h1 {
 .card .content {
     padding: 1rem;
     line-height: 1.6;
-    height: 100%;
     display: flex;
     flex-direction: column;
     background: #f8f9fa;
